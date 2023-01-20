@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de gradiente v2.0</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <main>
+        <div class="left-side">
+            <h2>Selecione as cores:</h2>
+            <input type="color" value="#4dbafe" id="first-color">
+            <input type="color" value="#9800eb" id="second-color">
+            <h3>Selecione a direção:</h3>
+    
+            <div class="directions">
+                <i data-direction="to top" class='bx bx-up-arrow-circle'></i>
+                <i data-direction="to top right" class='bx bx-right-top-arrow-circle'></i>
+                <i data-direction="to right" class="bx bx-right-arrow-circle active"></i>
+                <i data-direction="to bottom right" class="bx bx-right-down-arrow-circle"></i>
+                <i data-direction="to bottom" class="bx bx-down-arrow-circle"></i>
+                <i data-direction="to bottom left" class='bx bx-left-down-arrow-circle'></i>
+                <i data-direction="to left" class="bx bx-left-arrow-circle"></i>
+                <i data-direction="to top left" class="bx bx-left-top-arrow-circle"></i>
+            </div><!--end directions-->
+    
+            <button type="button" id="button-generate">Gerar</button>
+        </div><!--end left side-->
+
+        <div class="right-side">
+            <textarea name="textarea" id="textarea" cols="40" rows="10"></textarea>
+            <button type="button" id="button-copy">Copiar</button>
+        </div><!--end right side-->
+    </main><!--end main-->
+
+    <script src="js/gradient.js"></script>
+</body>
+</html>
